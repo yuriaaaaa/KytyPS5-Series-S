@@ -4,6 +4,9 @@ name: Xbox build
 # with the install steps, and a title and a What's new section when given. It runs only when started: Actions > Xbox build > Run
 # workflow, on a branch.
 on:
+  # yuriaaaaa fork: also build on every push to this branch (download from the run, no release).
+  push:
+    branches: [ xbox-ps5x ]
   workflow_dispatch:
     inputs:
       release:
